@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# アルファベット順になるようにファイルを再配置する
 [ -z "$(ls -AUCT0)" ] && exit 0
 while [ "./$(ls -AU | tail -1)" != "$temp" ]
 do
