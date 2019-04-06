@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# 現在のファイル順を変更せずに隙間を埋める
 [ -z "$(ls -AUCT0)" ] && exit 0
 while [ "./$(ls -AU | tail -1)" != "$temp" ]
 do
